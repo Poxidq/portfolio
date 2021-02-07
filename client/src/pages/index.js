@@ -1,2 +1,6 @@
 export { default as Home } from "./Home"
 export { default as NotFoundPage } from "./NotFoundPage"
+export { default as AboutPage } from "./AboutPage"
+export { default as LinksPage } from "./LinksPage"
+export { default as SkillsPage } from "./SkillsPage"
+export { default as WorksPage } from "./WorksPage"

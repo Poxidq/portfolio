@@ -1,12 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-function SectionCard({ title, color }) {
+function SectionCard({ title, color, link }) {
   return (
-    <div className={`section_card section_card_${color}`}>
-      <div className="section_title">
-        {title}
+    <Link to={`/${link}`} className="section_card_link">
+      <div className={`section_card section_card_${color}`}>
+        <div className="section_title">{title}</div>
       </div>
-    </div>
+    </Link>
   );
 }
 

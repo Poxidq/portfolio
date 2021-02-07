@@ -1,6 +1,47 @@
 .section_card {
     position: relative;
     cursor: pointer;
+
+    &_violet {
+        background-color: $violet;
+        color: $violet;
+    }
+
+    &_purple {
+        background-color: $purple;
+        color: $purple;
+    }
+
+    &_pink {
+        background-color: $pink;
+        color: $pink;
+    }
+
+    &_yellow {
+        background-color: $yellow;
+        color: $yellow;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, .1);
+        opacity: 0;
+        transition: all ease .35s;
+    }
+
+    &:hover:after {
+        opacity: 1;
+        animation: ease;
+    }
+
+    &_link {
+        display: contents;
+    }
 }
 
 .sections_body {
@@ -23,43 +64,4 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-.section_card_violet {
-    background-color: $violet;
-    color: $violet;
-}
-
-.section_card_purple {
-    background-color: $purple;
-    color: $purple;
-}
-
-.section_card_pink {
-    background-color: $pink;
-    color: $pink;
-}
-
-.section_card_yellow {
-    background-color: $yellow;
-    color: $yellow;
-}
-
-
-.section_card:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, .1);
-    opacity: 0;
-    transition: all ease .35s;
-
-}
-
-.section_card:hover:after {
-    opacity: 1;
-    animation: ease;
 }
