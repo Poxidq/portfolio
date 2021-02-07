@@ -1,0 +1,65 @@
+.section_card {
+    position: relative;
+    cursor: pointer;
+}
+
+.sections_body {
+    display: grid;
+    grid-template-columns: repeat(2, 50vw);
+    grid-template-rows: repeat(2, 50vh);
+}
+
+.section_title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    padding: 18px 30px;
+    background: #F9F9FF;
+    border-radius: 15px;
+    text-transform: uppercase;
+    width: fit-content;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section_card_violet {
+    background-color: $violet;
+    color: $violet;
+}
+
+.section_card_purple {
+    background-color: $purple;
+    color: $purple;
+}
+
+.section_card_pink {
+    background-color: $pink;
+    color: $pink;
+}
+
+.section_card_yellow {
+    background-color: $yellow;
+    color: $yellow;
+}
+
+
+.section_card:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .1);
+    opacity: 0;
+    transition: all ease .35s;
+
+}
+
+.section_card:hover:after {
+    opacity: 1;
+    animation: ease;
+}

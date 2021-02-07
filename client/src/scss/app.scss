@@ -1,0 +1,54 @@
+@import "variables";
+@import "./components/all";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+#root {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.title_test {
+    color: orange;
+    background-color: red;
+}
+
+.container {
+    padding: 0 15px;
+    max-width: 1000000px !important;
+}
+
+@media (min-width: 575.98px) {
+    .container {
+        max-width: 540px;
+        margin: auto;
+        padding: 0;
+    }
+}
+
+@media (min-width: 767.98px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 991.98px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1199.98px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1600.98px) {
+    .container {
+        width: auto;
+    }
+}

@@ -1,0 +1,20 @@
+.not_found_page {
+    margin: 0 auto;
+    font-size: 3rem;
+    width: max-content;
+    color: $violet;
+    margin-top: 20px;
+
+    img {
+        display: block;
+        margin-top: 40px;
+        width: 50vw;
+        border-radius: 20px;
+        box-shadow: 10px 10px 20px rgb(0 0 0 / 60%);
+    }
+
+    span {
+        text-align: center;
+        display: block;
+    }
+}
