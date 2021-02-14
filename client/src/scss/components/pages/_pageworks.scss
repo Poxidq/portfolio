@@ -1,0 +1,169 @@
+.page_works {
+    background: $violet;
+    position: relative;
+
+    .works_categories {
+        &_row {
+            display: flex;
+            width: fit-content;
+            margin: 0 auto 50px auto;
+        }
+
+
+
+        .works_category {
+            position: relative;
+            width: fit-content;
+            margin: 0 -40px;
+            color: #37465c;
+
+            .large_sub {
+                top: 80px;
+            }
+
+            span {
+                text-transform: uppercase;
+                color: $violet;
+                font-weight: 500;
+                font-size: 36px;
+                left: 75px;
+                top: 150px;
+                width: 150px;
+                position: absolute;
+                text-align: center;
+                z-index: 1000;
+            }
+
+            .triangle {
+                width: 0;
+                height: 0;
+                border-left: 150px solid transparent;
+                border-right: 150px solid transparent;
+
+
+                &-violet {
+                    border-bottom: 300px solid $white;
+                }
+
+                &-yellow {
+                    border-bottom: 300px solid $white;
+                }
+
+                &-pink {
+                    border-bottom: 300px solid $white;
+                }
+
+                &-purple {
+                    border-bottom: 300px solid $white;
+                }
+
+            }
+
+            &-inverted {
+                .triangle {
+                    transform: rotate(180deg);
+                    width: 0;
+                    height: 0;
+                    border-left: 150px solid transparent;
+                    border-right: 150px solid transparent;
+                }
+
+                span {
+                    top: 100px;
+                }
+            }
+
+            transition: all 0.3s ease;
+
+            &:hover {
+                transform: scale(1.02);
+                transition: all 0.1s ease;
+            }
+        }
+
+        &_row_inverted {
+            .works_category {
+                span {
+                    top: 90px;
+                }
+
+                .triangle {
+                    transform: rotate(180deg);
+                }
+            }
+
+            .works_category-inverted {
+                span {
+                    top: 150px;
+                }
+
+                .triangle {
+                    transform: rotate(0deg);
+                }
+            }
+
+
+        }
+    }
+
+    .works_sort {
+        display: flex;
+        align-items: center;
+        right: 27vw;
+        position: absolute;
+        margin-top: 10px;
+
+        span {
+            font-size: 24px;
+            color: $white;
+            font-weight: 400;
+        }
+
+        .buttons {
+            button {
+                background: $white;
+                outline: none;
+                border: none;
+                color: $violet;
+                border-radius: 5px;
+                font-size: 24px;
+                padding: 2px 20px 2px 10px;
+                margin-left: 10px;
+                border: 1px solid $white;
+
+                &:nth-child(1) {
+                    background-image: url("../../../assets/arrowb1.svg");
+                    background-repeat: no-repeat;
+                    background-position-x: 95%;
+                    background-position-y: center;
+                }
+
+                &:nth-child(2) {
+                    background-image: url("../../../assets/arrowb2.svg");
+                    background-repeat: no-repeat;
+                    background-position-x: 95%;
+                    background-position-y: center;
+                }
+
+                &:hover {
+                    border: 1px solid $pink;
+                }
+            }
+
+            .active {
+                color: $white;
+                background: $pink;
+                border: 1px solid $pink;
+
+                &-1 {
+                    background-image: url("../../../assets/arroww2.svg") !important;
+
+                }
+
+                &-2 {
+                    background-image: url("../../../assets/arroww1.svg") !important;
+                }
+            }
+        }
+    }
+}

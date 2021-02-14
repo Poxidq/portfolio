@@ -1,0 +1,47 @@
+.work_detail {
+    margin: 50px 0;
+
+    .work_title {
+        font-size: 24px;
+        color: $violet;
+        background: $white;
+        padding: 8px 15px;
+        border-radius: 10px;
+        font-weight: 500;
+    }
+
+    .work_text {
+        font-size: 24px;
+        color: $white;
+        font-weight: 300;
+        margin: 30px 0 30px 30px;
+    }
+
+    a[class="work_title"] {
+        transition: all .2s ease;
+        border: 1px solid $white;
+
+        &:hover {
+            background: $pink;
+            color: $white;
+            transition: all .2s ease;
+            border: 1px solid $pink;
+        }
+    }
+
+    .screenshots {
+        margin: 20px auto 0 auto;
+        display: table;
+
+        img {
+            margin-right: 15px;
+            transition: all .2s ease-in-out;
+            margin-bottom: 10px;
+
+            &:hover {
+                transform: scale(1.5);
+                transition: all .2s ease-in-out;
+            }
+        }
+    }
+}

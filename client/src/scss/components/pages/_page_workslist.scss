@@ -1,0 +1,73 @@
+.works_list {
+    width: 50vw;
+    margin: 55px auto 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    position: relative;
+
+
+    a {
+        width: fit-content;
+    }
+
+    .work_card {
+        background: $white;
+        color: $violet;
+        border-radius: 15px;
+        padding: 20px 25px;
+        min-height: 140px;
+        width: 20vw;
+        position: relative;
+        transition: all .54s linear;
+        margin: 20px 0;
+
+        .title {
+            font-size: 36px;
+            color: $pink;
+            font-weight: 500;
+        }
+
+        .text {
+            color: $white;
+            -ms-text-overflow: ellipsis;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            -ms-line-clamp: 5;
+            -webkit-line-clamp: 5;
+            line-clamp: 5;
+            display: -webkit-box;
+            word-wrap: break-word;
+            -webkit-box-orient: vertical;
+            box-orient: vertical;
+            font-size: 24px;
+            line-height: 27px;
+            font-weight: 300;
+        }
+
+        .technologies {
+            font-size: 18px;
+            font-weight: 500;
+            position: absolute;
+            bottom: 30px;
+            word-break: break-word;
+        }
+
+        .work_card_additional {
+            display: none;
+        }
+
+        &:hover {
+            transition: all .54s linear;
+            background: $pink;
+
+            .work_card_main {
+                display: none;
+            }
+
+            .work_card_additional {
+                display: block;
+            }
+
+        }
+    }
+}

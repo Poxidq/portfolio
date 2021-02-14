@@ -1,0 +1,42 @@
+.page_about {
+    background: $purple;
+
+    .about_avatar {
+        display: inline-block;
+        border-radius: 50%;
+        overflow: hidden;
+        width: 270px;
+        height: 270px;
+        border: 30px solid white;
+
+        img {
+            width: 180%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .about {
+        &_main-info {
+            font-weight: 500;
+            color: $white;
+            font-size: 36px;
+
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+            justify-content: space-evenly;
+        }
+
+        &_dop-info {
+            font-weight: 400;
+            color: $violet;
+            font-size: 24px;
+            background: $white;
+            border-radius: 15px;
+            padding: 20px 40px;
+            margin: 4rem auto 0 auto;
+            width: fit-content;
+        }
+    }
+}

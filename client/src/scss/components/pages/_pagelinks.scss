@@ -1,0 +1,25 @@
+.page_links {
+    background: $pink;
+
+    .links_list {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 8rem;
+
+        .link {
+            cursor: pointer;
+
+            & img {
+                transition: all ease .2s;
+            }
+
+            &:hover {
+                img {
+                    transform: rotateZ(15deg);
+                    transition: all ease .2s;
+                }
+            }
+        }
+    }
+}

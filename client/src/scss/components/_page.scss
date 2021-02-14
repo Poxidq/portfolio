@@ -1,13 +1,40 @@
+@import "./pages/page_workdetail";
+@import "./pages/page_workslist";
+@import "./pages/pageabout";
+@import "./pages/pagelinks";
+@import "./pages/pageskills";
+@import "./pages/pageworks";
+
 .page {
     padding: 0 10vw;
-    height: 100vh;
+    min-height: 100vh;
+    padding-bottom: 1px;
+    background: $violet !important;
 
     &_header {
         display: flex;
         align-items: center;
         padding-top: 2.4rem;
 
-        &_button {}
+        &_button {
+            transition: all .2s ease;
+
+            &:hover {
+                transform: scale(1.1);
+                transition: all .2s ease;
+            }
+        }
+
+        &_button_home {
+            position: absolute;
+            right: 10vw;
+            transition: all .2s ease;
+
+            &:hover {
+                transform: scale(1.1);
+                transition: all .2s ease;
+            }
+        }
 
         &_title {
             text-transform: uppercase;
@@ -49,84 +76,4 @@
     }
 
 
-}
-
-.page_about {
-    background: $purple;
-
-    .about_avatar {
-        display: inline-block;
-        border-radius: 50%;
-        overflow: hidden;
-        width: 270px;
-        height: 270px;
-        border: 30px solid white;
-
-        img {
-            width: 180%;
-            height: 100%;
-            object-fit: cover
-        }
-    }
-
-    .about {
-        &_main-info {
-            font-weight: 500;
-            color: $white;
-            font-size: 36px;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            &_text {
-                margin-left: 6rem;
-            }
-        }
-
-        &_dop-info {
-            font-weight: 400;
-            color: $purple;
-            font-size: 24px;
-            background: $white;
-            border-radius: 15px;
-            padding: 20px 40px;
-            margin: 4rem auto 0 auto;
-            width: fit-content;
-        }
-    }
-}
-
-.page_links {
-    background: $pink;
-
-    .links_list {
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        margin-top: 8rem;
-
-        .link {
-            cursor: pointer;
-
-            & img {
-                transition: all ease .2s;
-            }
-
-            &:hover {
-                img {
-                    transform: rotateZ(15deg);
-                    transition: all ease .2s;
-                }
-            }
-        }
-    }
-}
-
-.page_skills {
-    background: $yellow;
-}
-
-.page_works {
-    background: $violet;
 }
