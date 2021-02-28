@@ -1,8 +1,18 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { PageHeader } from "../components";
+import React, { useEffect, useState } from "react";
+
+import { PageHeader, CategoryWork } from "../components";
 
 function CategoryWorks() {
+  const testText =
+    "I created the Medirect project from scratch, from design to development. Goal: to create a system that can process people's blood tests. Goal: to create a system that can process people's blood tests.";
+  const testTechnologies = ["Python", "HTML", "CSS", "Django", "JS"];
+  const [works, setWorks] = useState();
+  useEffect(() => {
+    fetch("http://localhost:5000/works/python/")
+      .then((res) => res.json())
+      .then((works) => setWorks(works));
+  }, []);
+
   return (
     <div className="page page_works">
       <PageHeader title="python" color="violet" withHome={true} />
@@ -14,58 +24,21 @@ function CategoryWorks() {
         </div>
       </div>
       <div className="works_list">
-        <Link to="/works/python/medirect">
-          <div className="work_card">
-            <div className="work_card_main">
-              <span className="title">Medirect</span>
-              <p className="technologies">
-                CSS HTML JS Bootstrap Django (Python)
-              </p>
-            </div>
-            <div className="work_card_additional">
-              <p className="text">
-                I created the Medirect project from scratch, from design to
-                development. Goal: to create a system that can process people's
-                blood tests. Goal: to create a system that can process people's
-                blood tests.
-              </p>
-            </div>
-          </div>
-        </Link>
-        <Link to="/">
-          <div className="work_card">
-            <div className="work_card_main">
-              <span className="title">Medirect</span>
-              <p className="technologies">
-                CSS HTML JS Bootstrap Django (Python)
-              </p>
-            </div>
-            <div className="work_card_additional">
-              <p className="text">
-                I created the Medirect project from scratch, from design to
-                development. Goal: to create a system that can process people's
-                blood tests. Goal: to create a system that can process people's
-                blood tests.
-              </p>
-            </div>
-          </div>
-        </Link>
-        <Link to="/">
-          <div className="work_card">
-            <div className="work_card_main">
-              <span className="title">React Pizza</span>
-              <p className="technologies">CSS HTML JS Bootstrap React</p>
-            </div>
-            <div className="work_card_additional">
-              <p className="text">
-                I created the Medirect project from scratch, from design to
-                development. Goal: to create a system that can process people's
-                blood tests. Goal: to create a system that can process people's
-                blood tests.
-              </p>
-            </div>
-          </div>
-        </Link>
+        <CategoryWork
+          title="Medirect"
+          body={testText}
+          technologies={testTechnologies}
+        />
+        <CategoryWork
+          title="Medirect"
+          body={testText}
+          technologies={testTechnologies}
+        />
+        <CategoryWork
+          title="Medirect"
+          body={testText}
+          technologies={testTechnologies}
+        />
       </div>
     </div>
   );

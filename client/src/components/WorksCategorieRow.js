@@ -2,8 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function WorksCategorieRow({ categories, inverted }) {
-  console.log("cat: ", categories, "inv: ", inverted);
-
   return (
     <div
       className={

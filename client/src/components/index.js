@@ -3,3 +3,4 @@ export { default as PageHeader } from "./PageHeader";
 export { default as LinkButton } from "./LinkButton";
 export { default as PageLink } from "./PageLink";
 export { default as PageSkill } from "./PageSkill";
+export { default as CategoryWork } from "./CategoryWork";

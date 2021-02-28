@@ -8,11 +8,9 @@ import App from "./App";
 import "./scss/app.scss";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Router>
-      <App />
-    </Router>
-  </React.StrictMode>,
+  <Router>
+    <App />
+  </Router>,
   document.getElementById("root")
 );
 

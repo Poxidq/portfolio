@@ -1,0 +1,23 @@
+mongodb+srv://test:test@cluster0.9z5sa.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+
+// TodoList
+// Client
+// Daily tasks ＼＼٩(๑`^´๑)۶／／
+// [] Creating app.get() function for works and app.get("/works:categories") something like that 
+// (°ㅂ°╬) All (°ㅂ°╬)
+// [] Creating a hook to go to the previous url
+// [90%] edit design and scss
+// [100%] Works categories create Triangle component
+// [100%] Links Page create Link component
+// [100%] Skills Page create Skill component
+// [100%] Design of button switching in Category Works
+// [100%] Edit profile photo in AboutPage
+// [100%] To somehow sort out the styles from _page.scss
+// [~anyway] Sort assets folder
+// Server
+// [70%] Connect MongoDB to project
+// [100%] Creating schemas for works, links and skills
+// [25%] Сreating event handlers when switching to different paths (resolvers)
+//
+// Learn how to connect mongodb to project -->
+// --> Connect mongodb to project ヽ(`⌒´メ)ノ

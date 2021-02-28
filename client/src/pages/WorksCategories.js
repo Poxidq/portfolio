@@ -3,6 +3,7 @@ import React from "react";
 import { WorksCategorieRow, PageHeader } from "../components";
 
 function WorksCategories() {
+  
   const testCategories1 = [
     {
       name: "Python",
