@@ -1,0 +1,3 @@
+export default Array.prototype.last = function () {
+  return this[this.length - 1];
+};

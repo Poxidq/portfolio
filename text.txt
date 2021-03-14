@@ -3,10 +3,17 @@ mongodb+srv://test:test@cluster0.9z5sa.mongodb.net/myFirstDatabase?retryWrites=t
 // TodoList
 // Client
 // Daily tasks ＼＼٩(๑`^´๑)۶／／
-// [] Creating app.get() function for works and app.get("/works:categories") something like that 
+// [0%] create Loaders creating loaders for each page of the WroksCategory
+//  |-  change styles for the loader
+// [0%] upload data about skills and links
+// [0%] sort works in CategoryWorks
 // (°ㅂ°╬) All (°ㅂ°╬)
-// [] Creating a hook to go to the previous url
+// [100%] Displaying detailed job information
+// [100%] display all categories and works on this category
+// [100%] passing categories to WorksCategorieRow by 3
+// [100%] creating a fetch in react&express
 // [90%] edit design and scss
+// [100%] Creating app.get() function for works and app.get("/works:categories") something like that 
 // [100%] Works categories create Triangle component
 // [100%] Links Page create Link component
 // [100%] Skills Page create Skill component
@@ -15,9 +22,13 @@ mongodb+srv://test:test@cluster0.9z5sa.mongodb.net/myFirstDatabase?retryWrites=t
 // [100%] To somehow sort out the styles from _page.scss
 // [~anyway] Sort assets folder
 // Server
-// [70%] Connect MongoDB to project
+// [100%] Connect MongoDB to project
 // [100%] Creating schemas for works, links and skills
-// [25%] Сreating event handlers when switching to different paths (resolvers)
+// [100%] Сreating event handlers when switching to different paths (resolvers)
 //
 // Learn how to connect mongodb to project -->
-// --> Connect mongodb to project ヽ(`⌒´メ)ノ
+// [100%] Connect mongodb to project ヽ(`⌒´メ)ノ
+
+// Заметки
+// Что-то темное происходит с mongodb: Warning: Accessing non-existent property 'MongoError' of module exports inside circular dependency
+// Решение: откат до пред версии mongodb 

@@ -54,30 +54,3 @@ module.exports = function (app, db) {
     }
   });
 };
-
-// ~Beta~ Deleting works ~Beta~
-// app.delete("/works", (req, res) => {
-//   const title = req.body.title;
-//   const details = { title: title };
-//   db.deleteMany(details, (err, item) => {
-//     if (err) {
-//       res.send({ error: "An error has occurred" });
-//     } else {
-//       res.send("Works with title " + title + "    deleted!");
-//     }
-//   });
-// });
-
-// ~Beta~ Updating works ~Beta~
-// app.put ('/works/:id', (req, res) => {
-//   const id = req.params.id;
-//   const details = { '_id': new ObjectID(id) };
-//   const note = { text: req.body.body, title: req.body.title };
-//   db.collection('notes').update(details, note, (err, result) => {
-//     if (err) {
-//         res.send({'error':'An error has occurred'});
-//     } else {
-//         res.send(note);
-//     }
-//   });
-// });

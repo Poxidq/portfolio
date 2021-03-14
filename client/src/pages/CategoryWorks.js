@@ -1,21 +1,24 @@
 import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 
 import { PageHeader, CategoryWork } from "../components";
 
 function CategoryWorks() {
-  const testText =
-    "I created the Medirect project from scratch, from design to development. Goal: to create a system that can process people's blood tests. Goal: to create a system that can process people's blood tests.";
-  const testTechnologies = ["Python", "HTML", "CSS", "Django", "JS"];
+  const location = useLocation();
   const [works, setWorks] = useState();
   useEffect(() => {
-    fetch("http://localhost:5000/works/python/")
+    fetch(`http://localhost:3000${location.pathname}`)
       .then((res) => res.json())
       .then((works) => setWorks(works));
   }, []);
 
   return (
     <div className="page page_works">
-      <PageHeader title="python" color="violet" withHome={true} />
+      <PageHeader
+        title={location.pathname.split("/").last()}
+        color="violet"
+        withHome={true}
+      />
       <div className="works_sort">
         <span>Sort by:</span>
         <div className="buttons">
@@ -24,21 +27,17 @@ function CategoryWorks() {
         </div>
       </div>
       <div className="works_list">
-        <CategoryWork
-          title="Medirect"
-          body={testText}
-          technologies={testTechnologies}
-        />
-        <CategoryWork
-          title="Medirect"
-          body={testText}
-          technologies={testTechnologies}
-        />
-        <CategoryWork
-          title="Medirect"
-          body={testText}
-          technologies={testTechnologies}
-        />
+        {works &&
+          works.map((work, _id) => {
+            return (
+              <CategoryWork
+                key={_id}
+                title={work.title.firstLetterCaps()}
+                body={work.description}
+                technologies={work.technologies}
+              />
+            );
+          })}
       </div>
     </div>
   );

@@ -26,37 +26,21 @@
                 color: $violet;
                 font-weight: 500;
                 font-size: 36px;
-                left: 75px;
-                top: 150px;
+                left: 100px;
+                top: 175px;
                 width: 150px;
                 position: absolute;
                 text-align: center;
                 z-index: 1000;
+                word-break: break-word;
             }
 
             .triangle {
                 width: 0;
                 height: 0;
-                border-left: 150px solid transparent;
-                border-right: 150px solid transparent;
-
-
-                &-violet {
-                    border-bottom: 300px solid $white;
-                }
-
-                &-yellow {
-                    border-bottom: 300px solid $white;
-                }
-
-                &-pink {
-                    border-bottom: 300px solid $white;
-                }
-
-                &-purple {
-                    border-bottom: 300px solid $white;
-                }
-
+                border-left: 175px solid transparent;
+                border-right: 175px solid transparent;
+                border-bottom: 350px solid $white
             }
 
             &-inverted {
@@ -64,12 +48,13 @@
                     transform: rotate(180deg);
                     width: 0;
                     height: 0;
-                    border-left: 150px solid transparent;
-                    border-right: 150px solid transparent;
+                    border-left: 175px solid transparent;
+                    border-right: 175px solid transparent;
                 }
 
                 span {
-                    top: 100px;
+                    top: 125px;
+                    ;
                 }
             }
 
@@ -84,7 +69,7 @@
         &_row_inverted {
             .works_category {
                 span {
-                    top: 90px;
+                    top: 115px;
                 }
 
                 .triangle {
@@ -94,7 +79,7 @@
 
             .works_category-inverted {
                 span {
-                    top: 150px;
+                    top: 175px;
                 }
 
                 .triangle {

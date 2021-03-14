@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
+import { firstLetterCaps, arrayLastItem } from "./utils"; // converts the first character of the string to a capital letter
 
 import {
   Home,
